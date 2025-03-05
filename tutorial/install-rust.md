@@ -24,7 +24,7 @@ instead Rust code will have to be run from the terminal. If that is scary to you
 First, use `cd` followed by the desired directory path to navigate into that directory, which will be the place where our Rust files will
 show up, yes, there will be many files.
 
-![Make directory and cd](/home/ollit/Kuvat/mkdir-cd-rust-tutorial.png)
+![Make directory and cd](https://github.com/olkku45/rust-tutorial/blob/main/images/mkdir-cd-rust-tutorial.png)
 
 When we've ensured that we're in the directory that we want to be in, you type the following into the terminal: 
 `cargo new  NAME-HERE` where you replace NAME-HERE with the name that you want for the automatically created folder. For example,
