@@ -22,4 +22,5 @@ also for you to learn while reading this tutorial, hopefully. <p>
 
 ## List of contents
 
-1. [What is rust?](https://github.com/olkku45/rust-tutorial/blob/main/tutorial/what-is-rust.md)
+1. [What is Rust?](https://github.com/olkku45/rust-tutorial/blob/main/tutorial/what-is-rust.md)
+2. [Install Rust](https://github.com/olkku45/rust-tutorial/blob/main/tutorial/install-rust.md)
