@@ -8,7 +8,6 @@ different things. The reason I'm using python as a comparison point is just that
 I've done things with currently (as of march 2025). A much better comparison point to rust would be
 the C language, but since I obviously have no experience with it, it wouldn't be beneficial to use it 
 for comparisons for the sake of my own learning about rust. <p>
----
 <p> Like in Akuli's python tutorial, I'm going to try to use code examples to explain things with as little
 plain text as possible, except for at the start to introduce some things. But unlike in that tutorial, I'm going to assume you already know some basic
 programming concepts, and you also have a basic idea of what programming is and what it is like to do.
@@ -23,4 +22,4 @@ also for you to learn while reading this tutorial, hopefully. <p>
 
 ## List of contents
 
-1. [What is rust?](what-is-rust.md)
+1. [What is rust?](https://github.com/olkku45/rust-tutorial/blob/main/tutorial/what-is-rust.md)

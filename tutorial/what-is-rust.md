@@ -2,7 +2,7 @@
 ---
 ## Can you tell me already?
 ---
-<p> Rust is a memory-safe programming language that doesn't have a garbage collector or runtime,
+<p> TLDR: Rust is a memory-safe programming language that doesn't have a garbage collector or runtime,
 and instead of a garbage collector, it uses a concept called "ownership and borrowing" to keep bugs at bay. Don't worry
 if you don't get what I'm saying just yet, we'll go into these concepts. 
 
@@ -28,7 +28,7 @@ since understanding how C works would help you tremendously in understanding how
 And a side note, rust and C are not *as* low level as something like assembly or plain binary, which the computer processes
 directly, they still do have something between the code written and actual machine instructions.<p>
 
-# Garbage collector and runtime
+## Garbage collector and runtime
 ---
 <p>Now, about the garbage collector. If a programming language has a garbage collector, like python has, that means that the language does 
 memory management for you. The garbage collector's job is to free up memory that has been allocated to objects that are no longer used 
