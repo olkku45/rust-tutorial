@@ -1,7 +1,7 @@
 # A rust programming tutorial
 ---
 <p>This is a rust programming tutorial made as a learning project,
-with heavy inspiration taken from Akuli's [python tutorial](https://github.com/Akuli/python-tutorial). 
+with heavy inspiration taken from Akuli's python tutorial:https://github.com/Akuli/python-tutorial. 
 Throughout the tutorial, I'm going to compare some features of rust to their equivalents in python,
 though rust is a very different language compared to python, and they're generally used for vastly
 different things. The reason I'm using python as a comparison point is just that it's the only language
