@@ -1,13 +1,13 @@
 # What is rust?
----
+
 ## Can you tell me already?
----
+
 <p> TLDR: Rust is a memory-safe programming language that doesn't have a garbage collector or runtime,
 and instead of a garbage collector, it uses a concept called "ownership and borrowing" to keep bugs at bay. Don't worry
 if you don't get what I'm saying just yet, we'll go into these concepts. 
 
 ## Low-level
----
+
 <p>The language is general purpose, meaning it's not 
 really specialized for one use case, and it's a low-level systems language, much like C and C++. Low-level here means that the language operates "close"
 to the computer's components itself, meaning the language has little abstraction (layering) from actual machine instructions. On the other 
@@ -18,7 +18,7 @@ accessing memory, because the language does that for you, meanwhile in a low-lev
 you access memory yourself through the code that you write.<p>
 
 ## Memory safety
----
+
 <p>Remember how I said rust is a memory safe langauge? Well, C is not considered memory safe, because it doesn't enforce controls over memory access, and it lets you do whatever
 you want. But as you have heard a million times, with great power comes great responsibility, and the lack of memory safety with the C 
 language can cause people to make dangerous mistakes that can lead to vulnerabilities in software. Rust is a unique langauge, because 
@@ -29,7 +29,7 @@ And a side note, rust and C are not *as* low level as something like assembly or
 directly, they still do have something between the code written and actual machine instructions.<p>
 
 ## Garbage collector and runtime
----
+
 <p>Now, about the garbage collector. If a programming language has a garbage collector, like python has, that means that the language does 
 memory management for you. The garbage collector's job is to free up memory that has been allocated to objects that are no longer used 
 by the program, and this memory is called garbage. Then, the freed up memory can be used again. Rust doesn't have this, and you have to do
