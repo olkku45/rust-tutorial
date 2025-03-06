@@ -12,6 +12,10 @@ show up, yes, there will be many files.
 
 ![Make directory and cd](https://github.com/olkku45/rust-tutorial/blob/main/images/mkdir-cd-rust-tutorial.png)
 
+### IMPORTANT:
+If you're on Windows, then in the following two parts, you need to enter `rustc main.rs` followed by `./main.exe` instead of 
+`rustc main.rs` followed by `./main` when running a file. The latter option is for Linux and Mac users.
+
 ## Your first Rust program created automatically
 
 If you want to make your first "Hello world!" program in Rust automatically using commands, follow this part, but if you want to
@@ -35,8 +39,9 @@ When we've ensured we're in the directory where we want to create the Rust file,
 Now open it in your text editor of choice. For example, I'm using Neovim, so I type `nvim main.rs` into the terminal, but that will look 
 different for you depending on the text editor you're using. The difference here compared to the "automatic" method is that we don't get a .toml
 file and a folder containing a source Rust file. We'll go into what a .toml file is in the next part, don't worry. Now, when the file is opened, we can get
-our hands dirty actually doing something (albeit very very small). First, we have to create a main function that our program runs inside of. We'll go into why this is
-in another chapter. It looks like this:
+our hands dirty actually doing something (albeit very very small). First, we have to create a main function that our program runs inside of.
+The reason for this is that the main function serves as an entry point to the program, and the function "orchestrates" the entire program. It is
+also the first piece of code that runs in a Rust program. It looks like this:
 ```rust
 fn main() {
 	
