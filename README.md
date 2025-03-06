@@ -1,5 +1,5 @@
 # A rust programming tutorial
----
+
 <p>This is a rust programming tutorial made as a learning project,
 with heavy inspiration taken from Akuli's Python tutorial:https://github.com/Akuli/python-tutorial. 
 I'll say right off the bat that the official Rust book is way better than my tutorial here:https://doc.rust-lang.org/book/title-page.html,
@@ -7,14 +7,14 @@ but what I'm trying to do with this tutorial is teach myself Rust of course, but
 this tutorial, I'm trying to more or less summarize the Rust language's core components even more than in the book, so that many
 things that are included in the book are going to be unfortunately left out of this tutorial, that may even be somewhat important, for the sake of
 not making this too long. If you want to know that you're reading a tutorial made by professionals who know what they're doing, then 
-just go to the official book.<p>
+just go to the official book. If you haven't turned away yet, let us continue.<p>
 
 <p>Throughout the tutorial, I'm going to compare some features of Rust to their equivalents in Python,
 though Rust is a very different language compared to Python, and they're generally used for vastly
 different things. The reason I'm using Python as a comparison point is just that it's the only language
 I've done things with currently (as of march 2025). A much better comparison point to Rust would be
 the C language, but since I obviously have no experience with it, it wouldn't be beneficial to use it 
-for comparisons for the sake of my own learning about rust. <p>
+for comparisons for the sake of my own learning about rust.<p>
 
 <p> Like in Akuli's Python tutorial, I'm going to try to use code examples to explain things with as little
 plain text as possible, except for at the start to introduce some things. But unlike in that tutorial, I'm going to assume you already know some basic
@@ -34,3 +34,4 @@ also for you to learn while reading this tutorial, hopefully.<p>
 1. [What is Rust?](https://github.com/olkku45/rust-tutorial/blob/main/tutorial/what-is-rust.md)
 2. [Install Rust](https://github.com/olkku45/rust-tutorial/blob/main/tutorial/install-rust.md)
 3. [Using Rust](https://github.com/olkku45/rust-tutorial/blob/main/tutorial/using-rust.md)
+4. [Using Cargo](https://github.com/olkku45/rust-tutorial/blob/main/tutorial/using-cargo.md)
