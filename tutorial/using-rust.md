@@ -13,7 +13,7 @@ show up, yes, there will be many files.
 ![Make directory and cd](https://github.com/olkku45/rust-tutorial/blob/main/images/mkdir-cd-rust-tutorial.png)
 
 ### IMPORTANT:
-If you're on Windows, then in the following two parts, you need to enter `rustc main.rs` followed by `./main.exe` instead of 
+If you're on Windows, then in the following two parts, you need to enter `rustc main.rs` followed by `.\main.exe` instead of 
 `rustc main.rs` followed by `./main` when running a file. The latter option is for Linux and Mac users.
 
 ## Your first Rust program created automatically
