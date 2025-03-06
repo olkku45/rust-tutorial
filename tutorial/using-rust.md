@@ -5,7 +5,7 @@ in every code editor there is, instead I will leave it for you to do. I'm person
 Rust can't be run straight from the code editor though, unless you are using something like VS Code that has an extension for good Rust support, 
 instead Rust code will have to be run from the terminal. If that is scary to you, well, you will just have to get used to it.<p>
 
-## cd: into your desired directory
+## cd into your desired directory
 
 Hopefully you have installed Rust by now. So first, use `cd` followed by the desired directory path to navigate into that directory, which will be the place where our Rust files will
 show up, yes, there will be many files.
@@ -31,7 +31,7 @@ inside the text editor you're using before you do these two steps!
 
 ## Your first Rust program created manually
 
-When we've ensured we're in the directory we want to be in, type the following into the terminal: `touch main.rs` to create an empty Rust source file. 
+When we've ensured we're in the directory where we want to create the Rust file, type the following into the terminal: `touch main.rs` to create an empty Rust source file. 
 Now open it in your text editor of choice. For example, I'm using Neovim, so I type `nvim main.rs` into the terminal, but that will look 
 different for you depending on the text editor you're using. The difference here compared to the "automatic" method is that we don't get a .toml
 file and a folder containing a source Rust file. We'll go into what a .toml file is in the next part, don't worry. Now, when the file is opened, we can get
@@ -55,5 +55,20 @@ main.rs file resides, but if you aren't, you will have to do that now, but when 
 should be printed to your terminal! If you want to change what the program prints, you can do that by changing whatever is inside of the quotes
 in the println! macro (we'll go into what macros are in another chapter), and doing `rustc main.rs` and `./main` again. You have to do `rustc main.rs` again
 basically to tell the Rust compiler to make the changes, and `./main` is for running the code.
-	
-<p> Now you should have Rust installed, and you should be able to run stuff with it.<p>
+
+## What are toml-files (packages and crates as well)?
+
+In short, toml is basically just a config file format, and Rust uses toml-files as "manifests" for its packages, and these manifests basically have 
+metadata that is needed to compile a package. A package is a bundle of crates that provides a set of functionality, and a crate is code 
+that provides some sort of functionality, like the `rand` crate` provides functionality for generating random numbers. A toml-file for the hello_world 
+program that was generated a couple parts ago contains this information:
+```
+[package]
+name = "hello_world"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+```
+
+So, now you should have Rust installed, and you should be able to run stuff with it.

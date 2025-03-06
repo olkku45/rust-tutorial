@@ -36,9 +36,11 @@ by the program, and this memory is called garbage. Then, the freed up memory can
 memory management by yourself, but in a safe and controlled manner that is enforced upon you, unlike in C, where you just have to have
 the pure programming skill to be able to do memory management in a safe manner. Also, about the runtime. High-level languages like
 Python have a runtime environment, which is basically the environment in which the program executes in, which includes things like
-how the language is compiled,  how it's executed, and how memory is managed.  Now, I'm not saying that Rust doesn't have a runtime altogether,
-because it has to have it to some degree as a human-readable language, but a language like Python basically has more components to its 
-runtime, which makes Python actually run slower than something like Rust or C. Python is an *interpreted* language,
-while Rust is *compiled*, also. So, another takeaway is that Rust is faster than a high-level
-language because of its more minimal runtime, and because of this, Rust is very good for programs and software that require high performance, like
-operating systems, game engines and CLI (command line) tools.<p>
+how the language is compiled,  how it's executed, and how memory is managed.  Rust on the other hand doesn't have a runtime, it
+compiles to native code much like C does, and this lack of runtime makes these languages really fast compared to
+languages that have runtimes.  Python is an *interpreted* language,
+while Rust is *compiled* , also (though technically, Python is also compiled, but don't worry about it). So, another takeaway is that Rust is faster than a high-level
+language because of its lack of runtime, and because of this, Rust is very good for programs and software that require high performance, like
+operating systems, game engines and CLI (command line) tools. Another thing, because of their lack of runtimes, languages like Rust can
+be used to create operating systems, but not something like Python, since you need an operating system for a runtime to work, so in an 
+environment where you don't have access to a runtime, you need a language without a runtime.<p>
