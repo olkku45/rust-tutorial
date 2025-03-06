@@ -46,7 +46,7 @@ fn main() {
 Now, to make our "Hello, world!" print, type:
 ```	
 fn main() {
- println!("Hello, world!");
+	println!("Hello, world!");
 }
 ```
 	
