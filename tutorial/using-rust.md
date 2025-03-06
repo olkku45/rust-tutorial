@@ -37,14 +37,14 @@ different for you depending on the text editor you're using. The difference here
 file and a folder containing a source Rust file. We'll go into what a .toml file is in the next part, don't worry. Now, when the file is opened, we can get
 our hands dirty actually doing something (albeit very very small). First, we have to create a main function that our program runs inside of. We'll go into why this is
 in another chapter. It looks like this:
-```
+```rust
 fn main() {
 	
 }
 ```
 	
 Now, to make our "Hello, world!" print, type:
-```	
+```rust	
 fn main() {
     println!("Hello, world!");
 }
@@ -60,9 +60,9 @@ basically to tell the Rust compiler to make the changes, and `./main` is for run
 
 In short, toml is basically just a config file format, and Rust uses toml-files as "manifests" for its packages, and these manifests basically have 
 metadata that is needed to compile a package. A package is a bundle of crates that provides a set of functionality, and a crate is code 
-that provides some sort of functionality, like the `rand` crate` provides functionality for generating random numbers. A toml-file for the hello_world 
+that provides some sort of functionality, like the `rand` crate provides functionality for generating random numbers. A toml-file for the hello_world 
 program that was generated a couple parts ago contains this information:
-```
+```toml
 [package]
 name = "hello_world"
 version = "0.1.0"
