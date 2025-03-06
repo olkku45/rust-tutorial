@@ -37,14 +37,18 @@ different for you depending on the text editor you're using. The difference here
 file and a folder containing a source Rust file. We'll go into what a .toml file is in the next part, don't worry. Now, when the file is opened, we can get
 our hands dirty actually doing something (albeit very very small). First, we have to create a main function that our program runs inside of. We'll go into why this is
 in another chapter. It looks like this:
-`	fn main() {
-		
-	}`
+```
+fn main() {
+	
+}
+```
 	
 Now, to make our "Hello, world!" print, type:
-`	fn main() {
-		println!("Hello, world!");
-	}`
+```	
+fn main() {
+	println!("Hello, world!");
+}
+```
 	
 This should work. Now to run the code, what we have to do, is go in the terminal where you possibly still are cd:d into the directory where the 
 main.rs file resides, but if you aren't, you will have to do that now, but when you are, you will run `rustc main.rs` and `./main`. Now "Hello, world!"
