@@ -2,7 +2,7 @@
 
 ## Can you tell me already?
 
-<p> TLDR: Rust is a memory-safe programming language that doesn't have a garbage collector or runtime,
+<p> Rust is a memory-safe programming language that doesn't have a garbage collector or runtime,
 and instead of a garbage collector, it uses a concept called "ownership and borrowing" to keep bugs at bay. Don't worry
 if you don't get what I'm saying just yet, we'll go into these concepts. 
 
@@ -19,9 +19,9 @@ you access memory yourself through the code that you write.<p>
 
 ## Memory safety
 
-<p>Remember how I said Rust is a memory safe langauge? Well, C is not considered memory safe, because it doesn't enforce controls over memory access, and it lets you do whatever
+<p>Remember how I said Rust is a memory safe language? Well, C is not considered memory safe, because it doesn't enforce controls over memory access, and it lets you do whatever
 you want. But as you have heard a million times, with great power comes great responsibility, and the lack of memory safety with the C 
-language can cause people to make dangerous mistakes that can lead to vulnerabilities in software. Rust is a unique langauge, because 
+language can cause people to make dangerous mistakes that can lead to vulnerabilities in software. Rust is a unique language, because 
 it's a low-level language that actually enforces rules that restrict your ability to do whatever you want with memory, which makes it 
 memory safe. This is the main reason that I now chose to start learning Rust over C, even though some people say you should learn C before Rust,
 since understanding how C works would help you tremendously in understanding how Rust works. 
