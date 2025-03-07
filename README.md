@@ -35,4 +35,5 @@ also for you to learn while reading this tutorial, hopefully.<p>
 2. [Install Rust](https://github.com/olkku45/rust-tutorial/blob/main/tutorial/install-rust.md)
 3. [Using Rust](https://github.com/olkku45/rust-tutorial/blob/main/tutorial/using-rust.md)
 4. [Using Cargo](https://github.com/olkku45/rust-tutorial/blob/main/tutorial/using-cargo.md)
-5. [Variables and data types](https://github.com/olkku45/rust-tutorial/blob/main/tutorial/variables-data-types.md)
+5. [Variables](https://github.com/olkku45/rust-tutorial/blob/main/tutorial/variables.md)
+6. [Data types](https://github.com/olkku45/rust-tutorial/blob/main/tutorial/data-types.md)
