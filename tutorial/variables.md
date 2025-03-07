@@ -66,9 +66,9 @@ So, to change a variable initialized by `let`, we add `mut` after it:
 ```rust
 fn main() {
     let mut number = 100;
-    println!("{number}")
+    println!("{number}");
     number = 101;
-    println!("{number}")
+    println!("{number}");
 }
 ```
 The compiler will accept this, so we have done something correctly! When you initialize a variable with `let mut`, you will be able to modify its value later 
@@ -76,9 +76,9 @@ on in the program. However, if you try this:
 ```rust
 fn main() {
     const mut number: i32 = 100;
-    println!("{number}")
+    println!("{number}");
     number = 101;
-    println!("{number}")
+    println!("{number}");
 }
 ```
 You will get an error that says "const globals cannot be mutable", so yeah, you just can't change constants, they're *always* immutable. A side note if you 
@@ -97,8 +97,8 @@ initialized before use, so you can't do:
 ```rust
 fn main() {
     let x: i32; 
-	println!("{x}")
-	x = 100
+	println!("{x}");
+	x = 100;
 }
 ```
 Or else you'll get an error saying that the variable is "possibly uninitialized", which we here do know that it definitely is.	
@@ -109,24 +109,24 @@ It is possible to declare a new variable with the same name as a previous variab
 rather, the first variable gets *shadowed* by the second one. You can only shadow a variable with `let` and not `const`. An example of shadowing is:
 ```rust
 fn main() {
-    let const = 3.14
-	let const = const - 1
+    let const = 3.14;
+	let const = const - 1;
 }
 ```
 Except this gives us an error, because we can't use keywords as variable names, or more generally, we can't use keywords as names for anything in Rust,
 much like in Python as well. Also, here Rust infers that the number is a float. But let's do it correctly:
 ```rust
 fn main() {
-    let number= 3.14
-	let number = number - 1
+    let number= 3.14;
+	let number = number - 1;
 }
 ```
 Except that here we get an error as well, which says something like "cannot subtract integer from float", so with operations, the types of values
 need to be the same. We'll get more into this in the data types-section. Let's correct that:
 ```rust
 fn main() {
-    let number= 3.14
-	let number = number - 1.0
+    let number= 3.14;
+	let number = number - 1.0;
 }
 ```
 And now the compiler is happy. You do see that the compiler gives us a lot of errors, which is good actually. We'll go more into the compiler in its chapter.
@@ -134,9 +134,9 @@ So, we have shadowed the variable "number" here with a new variable "number", an
 to be used, so "let number = number - 1.0" here. Additionally, you can't do the following:
 ```rust
 fn main() {
-    let number= 3.14
-	number = number - 1.0
-	println!("{number}")  // prints 2.14
+    let number= 3.14;
+	number = number - 1.0;
+	println!("{number}");  // prints 2.14
 }
 ```
 Because here we're assigning twice to an immutable variable, as the error says. So, shadowing is basically just re-declaring a variable with the same name using `let`.
@@ -147,9 +147,9 @@ Now, let's also talk about mutation while we're talking about shadowing, since m
 without re-declaring it using `let` again. Let's see that in action:
 ```rust
 fn main() {
-    let mut number = 3.14
-	number -= 1.0
-	println!("{number}")  // prints 2.14
+    let mut number = 3.14;
+	number -= 1.0;
+	println!("{number}");  // prints 2.14
 }
 ```
 So, this does not create a new variable, it only mutates, so changes the existing one's value. It also preserves the type of the value, and you cannot change the
@@ -158,8 +158,8 @@ The reason for this is that with mutation, you're not declaring the variable aga
 you can't do:
 ```rust
 fn main() {
-    let number = 3.14
-	let number += 1
+    let number = 3.14;
+	let number += 1;
 }
 ```
 So you can't declare a variable when you're mutating it. 
