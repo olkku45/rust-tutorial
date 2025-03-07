@@ -97,8 +97,8 @@ initialized before use, so you can't do:
 ```rust
 fn main() {
     let x: i32; 
-println!("{x}");
-x = 100;
+    println!("{x}");
+    x = 100;
 }
 ```
 Or else you'll get an error saying that the variable is "possibly uninitialized", which we here do know that it definitely is.	
@@ -110,7 +110,7 @@ rather, the first variable gets *shadowed* by the second one. You can only shado
 ```rust
 fn main() {
     let const = 3.14;
-let const = const - 1;
+    let const = const - 1;
 }
 ```
 Except this gives us an error, because we can't use keywords as variable names, or more generally, we can't use keywords as names for anything in Rust,
@@ -118,7 +118,7 @@ much like in Python as well. Also, here Rust infers that the number is a float. 
 ```rust
 fn main() {
     let number= 3.14;
-let number = number - 1;
+    let number = number - 1;
 }
 ```
 Except that here we get an error as well, which says something like "cannot subtract integer from float", so with operations, the types of values
@@ -126,7 +126,7 @@ need to be the same. We'll get more into this in the data types-section. Let's c
 ```rust
 fn main() {
     let number= 3.14;
-let number = number - 1.0;
+    let number = number - 1.0;
 }
 ```
 And now the compiler is happy. You do see that the compiler gives us a lot of errors, which is good actually. We'll go more into the compiler in its chapter.
@@ -135,8 +135,8 @@ to be used, so "let number = number - 1.0" here. Additionally, you can't do the 
 ```rust
 fn main() {
     let number= 3.14;
-number = number - 1.0;
-println!("{number}");  // prints 2.14
+    number = number - 1.0;
+    println!("{number}");  // prints 2.14
 }
 ```
 Because here we're assigning twice to an immutable variable, as the error says. So, shadowing is basically just re-declaring a variable with the same name using `let`.
@@ -148,8 +148,8 @@ without re-declaring it using `let` again. Let's see that in action:
 ```rust
 fn main() {
     let mut number = 3.14;
-number -= 1.0;
-println!("{number}");  // prints 2.14
+    number -= 1.0;
+    println!("{number}");  // prints 2.14
 }
 ```
 So, this does not create a new variable, it only mutates, so changes the existing one's value. It also preserves the type of the value, and you cannot change the
@@ -159,7 +159,7 @@ you can't do:
 ```rust
 fn main() {
     let number = 3.14;
-let number += 1;
+    let number += 1;
 }
 ```
 So you can't declare a variable when you're mutating it. 
